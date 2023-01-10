@@ -69,6 +69,13 @@
             }
           ];
         };
+        example-hardware-vultr = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            dummy
+            self.nixosModules.hardware-vultr
+          ];
+        };
 
         # Mixins
         example-mixins-cloud-init = nixpkgs.lib.nixosSystem {
