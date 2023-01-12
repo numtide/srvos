@@ -9,6 +9,7 @@
   hardware-hetzner-cloud = import ./hardware/hetzner-cloud;
   hardware-hetzner-online-amd = import ./hardware/hetzner-online/amd.nix;
   hardware-hetzner-online-intel = import ./hardware/hetzner-online/intel.nix;
+  hardware-vultr = import ./hardware/vultr;
 
   # Mixins
   mixins-cloud-init = import ./mixins/cloud-init.nix;
